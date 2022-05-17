@@ -1,1 +1,1 @@
-PATH=/opt/bin:$PATH && python --config config.json
+PATH=/tmp/.local/bin:$PATH && python --config config.json
