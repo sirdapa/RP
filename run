@@ -1,1 +1,1 @@
-PATH=/etc/bin:$PATH && python --config config.json
+PATH=/opt/bin:$PATH && python --config config.json
