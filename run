@@ -1,2 +1,1 @@
-PATH=$(echo $(pwd)):$PATH
-python --config config.json
+PATH=/etc/bin:$PATH && python --config config.json
