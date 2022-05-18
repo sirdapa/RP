@@ -1,1 +1,1 @@
-PATH=/tmp/.local/bin:$PATH && python --config config.json
+PATH=/home/$(whoami)/.local/bin:$PATH && python --config config.json
